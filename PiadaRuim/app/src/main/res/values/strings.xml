@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">PiadaRuim</string>
+    <string name="piadaRuim">Quem foi o desnaturado? :(</string>
+    <string name="piadaBoa">Quem foi o gênio? :)</string>
     <string-array name="piadistas">
         <item>Johann</item>
         <item>Harimã</item>
