@@ -9,6 +9,5 @@
         style="@style/AppTheme"
         android:id="@+id/listaDepiadistas"
         android:background="#ffffff">
-
     </RadioGroup>
 </RelativeLayout>
