@@ -1,10 +1,30 @@
 <resources>
-    <string name="app_name">PiadaRuim</string>
+    <string name="app_name">A piada foi boa ou ruim?</string>
     <string name="piadaRuim">Quem foi o desnaturado? :(</string>
     <string name="piadaBoa">Quem foi o gênio? :)</string>
+    <string name="contaram_uma_piada_ruim">Contaram uma piada RUIM :(</string>
+    <string name="contaram_uma_piada_boa">Contaram uma piada BOA :)</string>
+    <string name="aplaudir">Um viva ao gênio!</string>
+    <string name="vaiar">Booooooooooooooooooo!</string>
     <string-array name="piadistas">
+        <item>Renato</item>
+        <item>Eduardo</item>
+        <item>Alan</item>
+        <item>Brandão</item>
         <item>Johann</item>
         <item>Harimã</item>
+        <item>Elias</item>
+        <item>Gabriel</item>
+        <item>Max</item>
+        <item>Rodrigo</item>
         <item>João Mattos</item>
+        <item>João Estag</item>
+        <item>Thiago</item>
+        <item>Tiago</item>
+        <item>Rafael Anastacio</item>
+        <item>Genaro</item>
+        <item>Leo</item>
+        <item>Rafael</item>
+        <item>João T.</item>
     </string-array>
 </resources>

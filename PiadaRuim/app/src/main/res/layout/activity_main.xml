@@ -12,7 +12,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contaram uma piada RUIM :("
+        android:text="@string/contaram_uma_piada_ruim"
         android:id="@+id/button1"
         android:background="@android:color/holo_red_dark"
         android:textColor="#ffffff"
@@ -25,7 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contaram uma piada BOA :)"
+        android:text="@string/contaram_uma_piada_boa"
         android:id="@+id/button2"
         android:background="@color/colorPrimaryDark"
         android:textColor="#ffffff"
