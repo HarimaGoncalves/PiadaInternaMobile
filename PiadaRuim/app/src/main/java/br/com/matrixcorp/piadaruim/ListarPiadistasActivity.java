@@ -21,17 +21,17 @@ public class ListarPiadistasActivity extends AppCompatActivity {
 
         String label = b.getBoolean("piadaBoa") ? getResources().getString(R.string.piadaBoa) : getResources().getString(R.string.piadaRuim);
 
-        ((TextView) findViewById(R.id.labeldaLista)).setText(label);
+        ((TextView)findViewById(R.id.labeldaLista)).setText(label);
 
-        lista = (RadioGroup) findViewById(R.id.listaDepiadistas);
+        lista = (RadioGroup)findViewById(R.id.listaDepiadistas);
         listaDePiadistas = getResources().getStringArray(R.array.piadistas);
 
-        ViewGroup hourButtonLayout = (ViewGroup) findViewById(R.id.listaDepiadistas);
+        ViewGroup layout = (ViewGroup)findViewById(R.id.listaDepiadistas);
         for (int i = 0; i < listaDePiadistas.length; i++) {
             RadioButton button = new RadioButton(this);
             button.setId(i);
             button.setText(listaDePiadistas[i]);
-            hourButtonLayout.addView(button);
+            layout.addView(button);
         }
     }
 }
