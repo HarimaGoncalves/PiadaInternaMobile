@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PiadaRuim</string>
+    <string-array name="piadistas">
+        <item>Johann</item>
+        <item>Harimã</item>
+        <item>João Mattos</item>
+    </string-array>
 </resources>

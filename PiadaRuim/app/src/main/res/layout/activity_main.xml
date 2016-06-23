@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contaram uma piada RUIM :("
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:background="@android:color/holo_red_dark"
         android:textColor="#ffffff"
         android:paddingLeft="5dp"
@@ -31,7 +31,8 @@
         android:textColor="#ffffff"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="82dp" />
+
 </RelativeLayout>
