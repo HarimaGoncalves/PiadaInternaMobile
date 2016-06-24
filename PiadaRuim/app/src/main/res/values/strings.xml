@@ -6,6 +6,10 @@
     <string name="contaram_uma_piada_boa">Contaram uma piada BOA :)</string>
     <string name="aplaudir">Um viva ao gênio!</string>
     <string name="vaiar">Booooooooooooooooooo!</string>
+    <string name="compartilha_boa_piada">Compartilhe a experiência!</string>
+    <string name="compartilha_piada_ruim">Compartilhe a má experiência...</string>
+    <string name="desistir">Desistir</string>
+    <string name="enviar">Enviar</string>
     <string-array name="piadistas">
         <item>Renato</item>
         <item>Eduardo</item>

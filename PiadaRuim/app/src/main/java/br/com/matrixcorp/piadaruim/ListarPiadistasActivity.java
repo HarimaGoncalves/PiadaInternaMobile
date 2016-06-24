@@ -1,5 +1,6 @@
 package br.com.matrixcorp.piadaruim;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ public class ListarPiadistasActivity extends AppCompatActivity {
 
     String[] listaDePiadistas;
     RadioGroup lista;
+    boolean aPiadaFoiBoa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,9 @@ public class ListarPiadistasActivity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
 
-        if(b.getBoolean("piadaBoa")) {
+        aPiadaFoiBoa = b.getBoolean("piadaBoa");
+
+        if(aPiadaFoiBoa) {
             findViewById(R.id.avaliarPiada).setBackgroundColor(ContextCompat.getColor(this, R.color.blue));
             ((Button)findViewById(R.id.avaliarPiada)).setText(getResources().getString(R.string.aplaudir));
             setTitle(getResources().getString(R.string.piadaBoa));
@@ -46,14 +50,14 @@ public class ListarPiadistasActivity extends AppCompatActivity {
             layout.addView(button);
         }
 
-        addListenerOnButton();
+            addListenerOnButton();
     }
 
-    public void addListenerOnButton() {
+    private void addListenerOnButton() {
 
         lista = (RadioGroup) findViewById(R.id.listaDepiadistas);
 
-        Button btnDisplay = (Button) findViewById(R.id.avaliarPiada);
+        Button btnDisplay = (Button)findViewById(R.id.avaliarPiada);
 
         assert btnDisplay != null;
         btnDisplay.setOnClickListener(new View.OnClickListener() {
@@ -66,8 +70,17 @@ public class ListarPiadistasActivity extends AppCompatActivity {
                 RadioButton radio = (RadioButton)findViewById(selectedId);
                 if(radio == null) {
                     Toast.makeText(ListarPiadistasActivity.this, "Piadista inválido!", Toast.LENGTH_SHORT).show();
-                } else{
-                    Toast.makeText(ListarPiadistasActivity.this, radio.getText(), Toast.LENGTH_SHORT).show();
+                } else {
+                    //Toast.makeText(ListarPiadistasActivity.this, radio.getText(), Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(getApplicationContext(), RegistrarPiadaActivity.class);
+                    Bundle b = new Bundle();
+
+                    b.putCharSequence("nomeDoPiadista", radio.getText());
+                    b.putBoolean("piadaBoa", aPiadaFoiBoa);
+
+                    intent.putExtras(b);
+                    startActivity(intent);
                 }
             }
         });
