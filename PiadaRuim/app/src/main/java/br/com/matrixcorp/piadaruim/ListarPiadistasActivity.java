@@ -34,7 +34,6 @@ public class ListarPiadistasActivity extends AppCompatActivity {
             setTitle(getResources().getString(R.string.piadaRuim));
         }
         ((Button)findViewById(R.id.avaliarPiada)).setTextColor(ContextCompat.getColor(this, R.color.white));
-        (findViewById(R.id.avaliarPiada)).setPadding(5, 0, 5, 0);
 
         lista = (RadioGroup)findViewById(R.id.listaDepiadistas);
         listaDePiadistas = getResources().getStringArray(R.array.piadistas);
@@ -52,24 +51,25 @@ public class ListarPiadistasActivity extends AppCompatActivity {
 
     public void addListenerOnButton() {
 
-        lista = (RadioGroup)findViewById(R.id.listaDepiadistas);
+        lista = (RadioGroup) findViewById(R.id.listaDepiadistas);
 
-        if(lista.getCheckedRadioButtonId() != 0) {
-            Button btnDisplay = (Button) findViewById(R.id.avaliarPiada);
+        Button btnDisplay = (Button) findViewById(R.id.avaliarPiada);
 
-            assert btnDisplay != null;
-            btnDisplay.setOnClickListener(new View.OnClickListener() {
+        assert btnDisplay != null;
+        btnDisplay.setOnClickListener(new View.OnClickListener() {
 
-                @Override
-                public void onClick(View v) {
+            @Override
+            public void onClick(View v) {
 
-                    int selectedId = lista.getCheckedRadioButtonId();
+                int selectedId = lista.getCheckedRadioButtonId();
 
-                    RadioButton radio = (RadioButton) findViewById(selectedId);
-
+                RadioButton radio = (RadioButton)findViewById(selectedId);
+                if(radio == null) {
+                    Toast.makeText(ListarPiadistasActivity.this, "Piadista inválido!", Toast.LENGTH_SHORT).show();
+                } else{
                     Toast.makeText(ListarPiadistasActivity.this, radio.getText(), Toast.LENGTH_SHORT).show();
                 }
-            });
-        }
+            }
+        });
     }
 }

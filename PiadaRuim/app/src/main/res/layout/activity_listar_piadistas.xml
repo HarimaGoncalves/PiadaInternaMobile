@@ -13,7 +13,8 @@
     android:scrollIndicators="right"
     android:textAlignment="center"
     android:background="#e0e0e0"
-    android:paddingBottom="60dp">
+    android:clickable="false"
+    android:layout_marginBottom="60dp">
 
     <LinearLayout
         android:orientation="vertical"
@@ -45,5 +46,7 @@
     android:layout_gravity="center_horizontal"
         android:layout_alignBottom="@+id/scrollView"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="5dp" />
+        android:layout_marginBottom="-55dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
 </RelativeLayout>
