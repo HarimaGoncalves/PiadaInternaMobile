@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:scrollIndicators="right"
+    android:textAlignment="center"
+    tools:context="br.com.matrixcorp.piadaruim.ListarPiadistasActivity">
 
-    <ScrollView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:id="@+id/scrollView"
-        android:fillViewport="false"
-        android:layout_weight="1">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+        android:layout_height="wrap_content">
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -23,17 +20,21 @@
                 android:id="@+id/listaDepiadistas"
                 android:background="#ffffff"
                 android:orientation="vertical"
-                android:showDividers="middle">
+                android:layout_gravity="bottom"
+                android:showDividers="middle"
+                android:gravity="top">
 
             </RadioGroup>
-        </LinearLayout>
-    </ScrollView>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/avaliarPiada"
-        android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/avaliarPiada"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|bottom" />
 
-</LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

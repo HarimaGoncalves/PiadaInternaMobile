@@ -26,13 +26,15 @@ public class ListarPiadistasActivity extends AppCompatActivity {
             findViewById(R.id.avaliarPiada).setBackgroundColor(ContextCompat.getColor(this, R.color.blue));
             ((Button)findViewById(R.id.avaliarPiada)).setText(getResources().getString(R.string.aplaudir));
             setTitle(getResources().getString(R.string.piadaBoa));
-        }else {
+        }
+        else
+        {
             findViewById(R.id.avaliarPiada).setBackgroundColor(ContextCompat.getColor(this, R.color.red));
             ((Button)findViewById(R.id.avaliarPiada)).setText(getResources().getString(R.string.vaiar));
             setTitle(getResources().getString(R.string.piadaRuim));
         }
         ((Button)findViewById(R.id.avaliarPiada)).setTextColor(ContextCompat.getColor(this, R.color.white));
-        ((Button)findViewById(R.id.avaliarPiada)).setPadding(5, 0, 5, 0);
+        (findViewById(R.id.avaliarPiada)).setPadding(5, 0, 5, 0);
 
         lista = (RadioGroup)findViewById(R.id.listaDepiadistas);
         listaDePiadistas = getResources().getStringArray(R.array.piadistas);
