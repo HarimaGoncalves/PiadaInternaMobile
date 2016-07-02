@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Piada Interna</string>
+    <string name="main_activity_name">A piada foi boa ou ruim?</string>
+    <string name="piadaRuim">Quem foi o desnaturado? :(</string>
+    <string name="piadaBoa">Quem foi o gênio? :)</string>
+    <string name="contaram_uma_piada_ruim">Contaram uma piada RUIM :(</string>
+    <string name="contaram_uma_piada_boa">Contaram uma piada BOA :)</string>
+    <string name="aplaudir">Um viva ao gênio!</string>
+    <string name="vaiar">Booooooooooooooooooo!</string>
+    <string name="compartilha_boa_piada">Compartilhe a experiência!</string>
+    <string name="compartilha_piada_ruim">Compartilhe a má experiência...</string>
+    <string name="desistir">Desistir</string>
+    <string name="enviar">Enviar</string>
+    <string name="firebase_url">https://piada-interna.firebaseio.com/</string>
+    <string name="firebase_jokers_url">https://piada-interna.firebaseio.com/jokers/</string>
+    <string name="firebase_groups_url">https://piada-interna.firebaseio.com/groups/</string>
+</resources>

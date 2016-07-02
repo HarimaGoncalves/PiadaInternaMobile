@@ -1,0 +1,2 @@
+TODO: Corrigir layout para rotação de tela OU travar a tela;
+DONE: Corrigir bug que permite clicar em opção não visível ao lado do botão "avaliarPiadista";
