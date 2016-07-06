@@ -34,7 +34,7 @@ public class ListarPiadistasActivity extends AppCompatActivity {
         Bundle b = getIntent().getExtras();
 
         aPiadaFoiBoa = b.getBoolean("piadaBoa");
-
+		//Verificando nível da piada
         if (aPiadaFoiBoa) {
             findViewById(R.id.avaliarPiada).setBackgroundColor(ContextCompat.getColor(this, R.color.blue));
             ((Button) findViewById(R.id.avaliarPiada)).setText(getResources().getString(R.string.aplaudir));
